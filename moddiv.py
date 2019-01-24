@@ -1,3 +1,4 @@
+//esai
 i=int(input())
 j=int(input())
 c=i%j
