@@ -1,4 +1,4 @@
-//esaikani
+//esai
 n=int(input())
 sum=0
 if(n>1 and n<1000000000000000000):
