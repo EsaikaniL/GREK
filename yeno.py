@@ -1,4 +1,4 @@
-//esaikani
+//esai
 x=raw_input()
 y=x.lower()
 print y
