@@ -1,4 +1,4 @@
-//esaikani
+//esai
 x=input()
 a=1
 if(x<0):
