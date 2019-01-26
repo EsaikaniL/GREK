@@ -1,7 +1,7 @@
 //esai
 a=input()
 b=input()
-if b in a :
+if b==a :
     print("yes")
 else:
      print("no")
