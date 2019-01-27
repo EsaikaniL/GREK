@@ -1,4 +1,4 @@
-mport numpy as np
+import numpy as np
 n=int(input())
 if(n<=100000):
     ni=(list(map(int,input().split())))
