@@ -6,5 +6,5 @@ def fact(N) :
     return p
 N,K = (input()).split()
 N,K = int(N),int(K)
-R = fact(N) // (fact(N-K))
+R = fact(N) // (fact(N-K)K)
 print(R)
