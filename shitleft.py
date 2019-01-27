@@ -1,3 +1,4 @@
+//esaikani
 import numpy as np
 n=int(input())
 if(n<=100000):
