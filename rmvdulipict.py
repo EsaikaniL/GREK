@@ -2,9 +2,9 @@
 import sys,string, math,itertools
 n = int(input())
 L = [ int(x) for x in input().split()]
-L2 = sorted(L)
-L3 = []
-for x in L2 :
-    L3.append(L.index(x)+1)
-print(*L3)
+L2 = []
+for x in L :
+    if x not in L2 :
+        L2.append(x)
+print(*L2)
 
