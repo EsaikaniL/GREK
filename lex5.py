@@ -1,10 +1,9 @@
 //esai
 import sys,string, math,itertools
-n,k = input().split()
-n,k = int(n),int(k)
-L = [ int(x) for x in input().split()]
-ans = L.count(k)
-if ans :
-    print('yes',ans)
+n = int(input())
+s = bin(n)[2:]
+k = s.count('1')
+if k==1 :
+    print('yes')
 else :
     print('no')
