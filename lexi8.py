@@ -2,9 +2,9 @@
 import sys,string, math,itertools
 n = int(input())
 L = [ int(x) for x in input().split()]
-ans = 'odd'
+ans = 'O'
 for x in L :
     if x%2 == 0 :
-        ans = 'even'
+        ans = 'E'
         break
 print(ans)
