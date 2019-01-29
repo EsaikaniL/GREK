@@ -1,8 +1,7 @@
 //esaikani
 import sys,string, math,itertools
-n,k = input().split()
-n,k = int(n),int(k)
-L = [ int(x) for x in input().split()]
-L2 = [ x for x in L if L.count(x) < k]
-L2.sort()
+s1 = input()
+s2 = input()
+L = s1.split()
+L2 = [ x for x in L if x != s2]
 print(*L2)
