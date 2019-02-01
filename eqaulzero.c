@@ -13,7 +13,7 @@ void main()
         {
             if(a[i]+a[j]==0)
             {
-                printf("%d,%d\t",a[i],a[j]);
+                printf("%d %d\t",a[i],a[j]);
             }
         }
     }
