@@ -1,23 +1,39 @@
 //esaikani
-#include<stdio.h>
-int main(void)
+#include <stdio.h>
+
+int main()
 {
-int n,a[n],k=0;
-scanf("%d",&n);
-for(int i=0;i<n;i++) {
-	scanf("%d",&a[i]);
-}
-for(int i=0;i<n-1;i++) {
-	for(int j=i+1;j<n;j++) {
-		if(a[i]==a[j]) {
-			k++;
-			printf("%d",a[i]);
-			break;
-		}
+	int arr[5];
+	int i,j,n;
+	int ind,ele; //to store index & element
+	
+	//read array elements
+	scanf("%d",&n);
+	for(i=0; i<n; i++)
+	{
+		scanf("%d",&arr[i]);
 	}
-}
-if(k==0) {
-	printf("unique");
-}
-return 0;
+	ind=-1;
+	//check first repeated element
+	for(i=0; i<n; i++)
+	{
+		for(j=i+1; j<n; j++)
+		{
+			if(arr[i]==arr[j])
+			{
+				ele=arr[j];
+				ind=j;
+				break;
+			}				
+		}
+		
+		if(ind != -1)
+			break;
+	}
+	if(ind!=-1)
+		printf("%d",ele);
+	else
+		printf("unique");
+
+	return 0;
 }
