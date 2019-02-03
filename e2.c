@@ -32,6 +32,10 @@ int main()
 	{
 		printf("%d",a[j]);
 	}
+	else
+	{
+		printf("%d",a[j]);
+	}
 	count=0;
 	}
 	return 0;
