@@ -8,14 +8,16 @@ int main()
        scanf("%d",&a[i]);
    }
    for(i=0;i<n;i++)
-   {x=1;
+   {
+      x=1;
        for(j=0;j<n;j++)
        {
            if(i!=j)
            {
                x*=a[j];
            }
-       }out[i]=x;
+       }
+      out[i]=x;
    }
    for(i=0;i<n;i++)
    {
