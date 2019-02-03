@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdio.h>
 int main()
 {
 int n,i,k=0,j;
@@ -8,29 +9,12 @@ int n,i,k=0,j;
   n=strlen(a);
   for(i=0;i<n;i++)
   {
-    b[k]=a[i];
-    k++;
+    scanf("%[^\n]%*c",a[i]);
+    
   }
-  for(i=n;i>=0;i--)
-  {
- 
-    printf("%c",a[i]);
-   
-  }
-   printf("\n");
-    if(b[k]==a[i])
-    {
-      printf("\n");
-      for(i=0;i<n-1;i++)
-      {
-
-      
-      printf("%c",a[i]);
-      }
-    }
-    else
-    {
-      printf("%s",b[k]);
-    }
- return 0;
+	if(a[0]==a[n-1])
+	n=n-1;
+	for(i=0;i<n;i++)
+	printf("%c",a[i]);
+return 0;
 }
