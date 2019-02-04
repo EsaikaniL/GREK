@@ -2,20 +2,25 @@
 
 int main(void) 
 {
-	int n,i,rem,array[20],count=0;
-	scanf("%d",&n);
-	while(n!=0)
+	int num,i=0,j=0,sum=0,count=0,array[30],res,rem;
+	scanf("%d",&num);
+	while(num!=0)
 	{
-		rem=n%2;
-		array[i]=rem;
+		rem=num%10;
+		res=(rem*(pow(2,i)));
 		i++;
+		array[j]=res;
+		j++;
 		count=count+1;
-		n=n/2;
+		num=num/10;
+	
 	}
-	for(i=count-1;i>=0;i--)
+	for(j=0;j<count;j++)
 	{
-		printf("%d",array[i]);
+		sum=sum+array[j];
 	}
+	printf("%d",sum);
 	
 	return 0;
 }
+© 2019 GitHub, Inc.
