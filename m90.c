@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void){
-	int n,j,p,;
+	int n,j,p;
 	scanf("%d",&n);
 	int a[n];
 	int i;
@@ -13,11 +13,9 @@ int main(void){
 	{
 		for(j=i+1;j<n;j++)
 		{
-			p=(a[i])&(a[j]);
-			if(p>max)
-			{
-				max=p;
-			}
+			p=(a[i])|(a[j]);
 		}
 	}
-	printf("%d",max);
+	printf("%d",p);
+	return 0;
+}
