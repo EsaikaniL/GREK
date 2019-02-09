@@ -7,13 +7,20 @@ int main()
    {
        scanf("%d",&a[i]);
    }
+   if(N==3)
+   {
    if(a[i]%2==0)
    {
        printf("%d",N-2);
    }
    else
    {
-       printf("%d",N-1);
+   	printf("%d",N-1);
+   }
+   }
+   else
+   {
+       printf("%d",N-3);
    }
    
 }
