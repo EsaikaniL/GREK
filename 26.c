@@ -1,28 +1,44 @@
 //esai
-#include<stdio.h>
-#include<stdlib.h>
-void main()
+#include <stdio.h>
+#include <string.h>
+ 
+char str[100], sub[100];
+int count = 0, count1 = 0;
+ 
+int main()
 {
-    char s[1000],b[1000],a[1000];
-    int i,j,l1,l2,count=0;
-    gets(s);
-    i=0;
-    while(s[i]!='\0')
+    int i, j, l, l1, l2;
+ 
+    scanf("%[^\n]s", str);
+ 
+    l1 = strlen(str);
+ 
+ 
+    scanf(" %[^\n]s", sub);
+ 
+    l2 = strlen(sub);
+ 
+    for (i = 0; i < l1;i++)
     {
-        if(s[i]==' ')
-            break;
-        b[i]=s[i];
-        i++;
+        j = 0;
+        count = 0;
+        while ((str[i] == sub[j]))
+        {
+            count++;
+            j++;
+        }
+    if (count == l2)
+        {
+            count1++;                                   
+            count = 0;
+        }
+        else
+            i++;  
     }
-    b[i]='\0';
+    printf("%d",count1);
 
-
-    j=0;
-    i++;
-     while(s[i]!='\0')
-    {
-
-        a[j]=s[i];
+	return 0;
+}
         j++;
         i++;
 
