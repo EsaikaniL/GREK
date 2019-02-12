@@ -23,4 +23,3 @@ int main(void)
 	}
 	return 0;
 }
-© 2019 GitHub, Inc.
