@@ -1,5 +1,5 @@
 //Esaikani
-S=(raw_input()).split()
+S=(input()).split()
 a=[]
 for i in S:
     a.append(i[::-1])
