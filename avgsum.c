@@ -24,10 +24,10 @@ int main()
       int l=d/count;
       int p=u/count1;
       if(l==p){
-         printf("Yes");
+         printf("yes");
       }
  else{
-          printf("No");
+          printf("no");
  }
 
 return 0;
