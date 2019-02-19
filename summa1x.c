@@ -5,8 +5,6 @@ int main(void)
 	int c=0,j=1,check=0,i;
 	char a[100];
 	scanf("%s",&a);
-	if(strlen(a)>=8)
-	{
 	for(i=0;a[i]!='\0';i++)
 	{
 		if(a[i]=='L')
@@ -29,7 +27,6 @@ int main(void)
 				check++;
 			}
 		}
-	}
 	}
 	if(check>0)
 	{
