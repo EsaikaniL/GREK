@@ -1,8 +1,7 @@
-//esaikani
 #include <stdio.h>
 int main()
 {
-	int n,q,u[10],v[10],a[10],i,j,k,min=0;
+	int n,q,u[10],v[10],a[10],i,j,k;
 	scanf("%d %d",&n,&q);
 	for(i=1;i<=n;i++)
 	{
@@ -14,16 +13,13 @@ int main()
 	}
 		for(k=1;k<=q;k++)
 	{
-	     min=a[0];
+	     int x=0;
 	    for(i=u[k];i<=v[k];i++)
 	    {
-	       if(a[i]<min)
-	       {
-	       min=a[i];
-	       }
+	      x=x^a[i];
 	      
 	    }
-	   printf("%d\n",min);
+	   printf("%d\n",x);
 	}
 
 	    return 0;
