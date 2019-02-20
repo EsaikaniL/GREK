@@ -1,4 +1,4 @@
-//esai
+//esaikani
 s=raw_input()
 n=''
 for x in range(0,len(s)-1,2):
