@@ -1,4 +1,4 @@
-//esaikani
+
 s,u=map(str,input().split())
 r=list(s)
 e=list(u)
