@@ -1,22 +1,38 @@
 //esai
 #include <stdio.h>
-int main() {
-	int a[10],n,i,j,temp,i1,i2;
-	scanf("%d",&n);
-	for(i=1;i<=n;i++)
-	scanf("%d",&a[i]);
-	for(i=1;i<=n;i++)
-	{
-	for(j=i+1;j<=n;j++)
-	if(a[i]>a[j])
-	{
-	temp=a[i];
-	a[i]=a[j];
-	a[j]=temp;
-	}
-	}
-	i1=1;
-	i2=n;
-	printf("%d %d",i1,i2);
-	return 0;
+
+#define MAX_SIZE 100   
+
+int main()
+{
+    int arr[MAX_SIZE];
+    int i, max, min, a;
+    scanf("%d", &a);
+    for(i=0; i<a; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+
+
+        max = arr[0];
+    min = arr[0];
+
+   for(i=1; i<a; i++)
+    {  
+    if(arr[i] > max)
+        {
+            max = arr[i];
+        }
+
+     
+        if(arr[i] < min)
+        {
+            min = arr[i];
+        }
+    }
+
+     printf("%d", min);
+    printf(" %d", max);
+
+    return 0;
 }
