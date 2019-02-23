@@ -1,38 +1,29 @@
 //esai
-#include <stdio.h>
-
-#define MAX_SIZE 100   
-
-int main()
+#include<stdio.h>
+int main(void)
 {
-    int arr[MAX_SIZE];
-    int i, max, min, a;
-    scanf("%d", &a);
-    for(i=0; i<a; i++)
-    {
-        scanf("%d", &arr[i]);
-    }
-
-
-        max = arr[0];
-    min = arr[0];
-
-   for(i=1; i<a; i++)
-    {  
-    if(arr[i] > max)
-        {
-            max = arr[i];
-        }
-
-     
-        if(arr[i] < min)
-        {
-            min = arr[i];
-        }
-    }
-
-     printf("%d", min);
-    printf(" %d", max);
-
-    return 0;
+	int n,ma,mi,i,j,min,max;
+	scanf("%d",&n);
+	int a[n];
+	for(i=0;i<n;i++)
+	scanf("%d",&a[i]);
+	min=a[0];
+	max=a[0];
+	for(i=0;i<n;i++)
+	{
+		for(j=i;j<n;j++)
+		{
+			if(min>=a[i])
+			{
+				min=a[i];
+				mi=i+1;
+			}
+			if(max<=a[i])
+			{
+				max=a[i];
+				ma=i+1;
+			}
+		}
+	}
+		printf("%d %d",mi,ma);
 }
