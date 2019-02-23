@@ -1,5 +1,5 @@
-//esai
-num=int(input())
+
+num=int(raw_input())
 l1=input().split()
 m=[]
 for i in l1:
