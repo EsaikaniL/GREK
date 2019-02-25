@@ -1,0 +1,26 @@
+//esaikani
+<!DOCTYPE html>
+<html>
+<head>
+<title>LOVE CALCULTOR</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+ $(document).ready(function () {
+        $('button').on('click', function () {
+            var n1 = parseInt($('#test').val());
+            var n2 = parseInt($('#test1').val());
+            var r = n1 + n2;
+            alert(r+"%");
+        });
+    });
+</script>
+</head>
+<body>
+<h1>LOVE CALCULATOR</h1>
+<p>boy: <input type="text" id="test" value=""></p>
+<p>girl: <input type="text" id="test1" value=""></p>
+
+<button>submit</button>
+
+</body>
+</html>
