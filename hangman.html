@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hangman!</title>
+    <script type="text/javascript">
+     function image(count) {
+		if (count == 1) {
+			document.write("   |");
+			document.write("   |");
+			document.write("   |");
+			document.write("   |");
+			document.write("   |");
+			document.write("   |");
+			document.write("   |");
+			document.write("___|___");
+		}
+		if (count == 2) {
+			document.write("   ____________");
+			document.write("   |");
+			document.write("   |");
+			document.write("   |");
+			document.write("   |");
+			document.write("   |");
+			document.write("   |");
+			document.write("   | ");
+			document.write("___|___");
+		}
+		if (count == 3) {
+			document.write("   ____________");
+			document.write("   |          _|_");
+			document.write("   |         /   \\");
+			document.write("   |        |     |");
+			document.write("   |         \\_ _/");
+			document.write("   |");
+			document.write("   |");
+			document.write("   |");
+			document.write("___|___");
+		}
+		if (count == 4 ) {
+			document.write("   ____________");
+			document.write("   |          _|_");
+			document.write("   |         /   \\");
+			document.write("   |        |     |");
+			document.write("   |         \\_ _/");
+			document.write("   |           |");
+			document.write("   |           |");
+			document.write("   |");
+			document.write("___|___");
+			var hint=promt("Do you want hint?");
+			if(hint=="yes")
+			   alert("HINT: The word is related to Artificial Intelligence");
+		}
+		if (count == 5) {
+			document.write("Sorry try to prove your intelligence next time!");
+			document.write("   ____________");
+			document.write("   |          _|_");
+			document.write("   |         /   \\");
+			document.write("   |        |     |");
+			document.write("   |         \\_ _/");
+			document.write("   |          _|_");
+			document.write("   |         / | \\");
+			document.write("   |          / \\ ");
+			document.write("___|___      /   \\");
+			document.write("GAME OVER! The word was " + word);
+		}
+	}
+</script>
+</head>
+<body>
+<script type="text/javascript">
+var words = ["robot","agent","cognitive","automata","chatbot","heuristics","fuzzy","lisp","logistics","mechatronics","prolog","humanoid","bots","search","chaining","entailment","pruning","percept","shell","gaming","reasoning","actuator","sensor","neuralnetwork","knowledgebase"];
+    var word = words[Math.floor(Math.random() * words.length)];
+    var answerArray = [];
+    for (var i = 0; i < word.length; i++) {
+      answerArray[i] = "_";
+    }
+    var count=0;
+    while(count<6 && answerArray.includes("_") {
+      alert(answerArray.join(" "));
+      var guess = prompt("Guess a letter:");
+      if (guess == null) {
+        break;
+      } 
+      else if (guess.length != 1) {
+        alert("Please enter a single letter.");
+      } 
+      else {
+        for (var j = 0; j < word.length; j++) {
+          if (word[j] == guess) {
+            answerArray[j] = guess;
+          }
+          else{
+            count++;
+            image(count);
+          }
+        } 
+      }
+    }
+    if(answerArray == word){
+     alert(answerArray.join(" "));
+     alert("Good job! The answer was " + word);
+    }
+</script>
+</body>
