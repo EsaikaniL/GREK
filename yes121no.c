@@ -2,8 +2,8 @@
 
 int main(void) 
 {
-	int n,array[50],i,j,temp;
-	scanf("%d",&n);
+	int n,k,array[50],i,j,temp;
+	scanf("%d %d",&n,&k);
 	for(i=0;i<n;i++)
 	{
 		scanf("%d ",&array[i]);
@@ -20,8 +20,7 @@ int main(void)
 		}
 		}
 	}
-	printf("%d",array[1]);
-		
+	printf("%d",array[k-1]);
 	
 	return 0;
 }
