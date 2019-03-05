@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>The HangMan Game v 1.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="hangman.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="hangman.js"></script>
+</head>
+<body>
+    <h2>The Hangman v 1.0</h2>
+    <p>Players: 2</p>
+    <p>
+        <u>Instructions:</u><br/>
+        P1: Input the secret guess word into the textbox and press 'Start game' button<br/>
+        P2: Try to guess the secret word by tapping or clicking on a letter or use the PC keyboard. You have 6 lives. If the word contains the letter, it will be uncovered; otherwise you lost a life<br/>
+        If you guess the word, you win. If you lost all of the tries, you lost.
+        All suggestions are welcome
+    </p>
+    <div id="inputGuessWord">
+        <input type="password" id="guessWord" />
+        <button id="btnSubmit">Start game</button>
+    </div>
+    <div id="hangmanContainer">
+        <div id="hangman-img-container">
+            <b>&nbsp;O</b><br/>
+            <b>/&nbsp;</b>
+            <b>|&nbsp;</b>
+            <b>\</b><br/>
+            <b>/&nbsp;</b>
+            <b>\</b>
+        </div>
+        <div id="guessContainer">
+            <div class="guessingWordContainer"></div>
+            <label>Tap a letter</label>
+            <div class="tryLetters"></div>
+        </div>
+    </div>
+</body>
+</html>
