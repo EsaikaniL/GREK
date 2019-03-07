@@ -7,11 +7,11 @@ int main(void)
 	scanf("%s",str);
 	if(str[0]=='S' || str[0]=='s')
 	{
-		printf("\nyes");
+		printf("yes");
 	}
 	else
 	{
-		printf("\nno");
+		printf("no");
 	}
 	return 0;
 }
