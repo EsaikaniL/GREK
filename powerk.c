@@ -3,20 +3,19 @@
 
 int main(void) 
 {
-	int n,i,j,mul=1,flag=0;
-	scanf("%d",&n);
+	int n,k,i,j,mul=1,flag=0;
+	scanf("%d %d",&n,&k);
 	for(i=0;i<n;i++)
 	{
-		for(j=i;j>0;j--)
-		{
-			mul=mul*2;
-			if(mul==n)
+			for(j=i;j>0;j--)
 			{
-				flag=1;
-				break;
+				mul=mul*k;
+				if(mul==n)
+				{
+					flag=1;
+					break;
+				}
 			}
-			
-		}
 	}
 	if(flag==1)
 	{
