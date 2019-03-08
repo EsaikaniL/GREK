@@ -3,8 +3,8 @@
 
 int main(void) 
 {
-	int n;
-	scanf("%d",&n);
+	int n,k;
+	scanf("%d %d",&n,&k);
 	int array[n],i;
 	for(i=0;i<n;i++)
 	{
@@ -12,7 +12,7 @@ int main(void)
 	}
 	for(i=0;i<n;i++)
 	{
-		if(array[i]>array[i+1])
+		if(array[i]-array[i+1]==k)
 		{
 			printf("%d",array[i]);
 			break;
