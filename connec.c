@@ -10,15 +10,12 @@ int main(void)
 	{
 		scanf("%d ",&array[i]);
 	}
-	for(i=0;i<n-1;i++)
+	for(i=0;i<n;i++)
 	{
 		if(array[i]>array[i+1])
 		{
-			printf("%d ",array[i]);
-		}
-		else
-		{
-			printf("%d ",array[i+1]);
+			printf("%d",array[i]);
+			break;
 		}
 	}
 	return 0;
