@@ -5,22 +5,20 @@
 int main(void) 
 {
 	char str1[50],str2[50];
-	int n1,n2;
+	int i,j;
 	scanf("%s",str1);
 	scanf("%s",str2);
-	n1=strlen(str1);
-	n2=strlen(str2);
-	if(n1>n2)
+	for(i=0;str1[i]!='\0';i++)
 	{
-		printf("%s",str1);
+		
 	}
-	else if(n2>n1)
+	for(j=0;str2[j]!='\0';j++)
 	{
-		printf("%s",str2);
+		str1[i]=str2[j];
+		i++;
 	}
-	else
-	{
-		printf("%s",str2);
-	}
+	str1[i]='\0';
+	printf("%s",str1);
+	
 	return 0;
 }
