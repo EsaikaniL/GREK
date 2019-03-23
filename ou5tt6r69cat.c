@@ -4,10 +4,26 @@
 
 int main(void) 
 {
-	int n1,n2,sum;
-	scanf("%d",&n1);
-	scanf("%d",&n2);
-	sum=n1+n2;
-	printf("%d",sum);
+	int num,flag=0,temp;
+	scanf("%d",&num);
+	temp=num;
+	while(temp!=1)
+	{
+		if(temp%2!=0)
+		{
+			flag=1;
+			break;
+			
+		}
+		temp=temp/2;
+	}
+	if(flag==0)
+	{
+		printf("yes");
+	}
+	else if(flag==1)
+	{
+		printf("no");
+	}
 	return 0;
 }
