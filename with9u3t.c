@@ -9,7 +9,7 @@ int main(void)
 	scanf("%[^\n]s",str);
 	for(i=0;str[i]!='\0';i++)
 	{
-		if(str[i]>='0' && str[i]<='9')
+		if(!((str[i]>='0' && str[i]<='9')||(str[i]>='a' && str[i]<='z')))
 		{
 			count=count+1;
 		}
