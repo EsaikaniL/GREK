@@ -1,4 +1,3 @@
-//esaikani
 s=raw_input()
 f=k=a=d=e=0
 for i in range(len(s)):
