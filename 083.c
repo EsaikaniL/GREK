@@ -1,14 +1,46 @@
 //esaikani
-#include <stdio.h>
+#include<stdio.h>
 
-int main(void) 
+int main(void)
+
 {
-	char str[50];
-	int i;
-	scanf("%[^\n]s",str);
-	if(printf("%s",str))
-	{
-		
-	}
-	return 0;
+
+int num,i,flag=0;
+
+scanf("%d",&num);
+
+for(i=2;i<=num/2;i++)
+
+{
+
+if(num%i==0)
+
+{
+
+flag=1;
+
+break;
+
 }
+
+}
+
+if(flag==0)
+
+{
+
+printf("yes");
+
+}
+
+else
+
+{
+
+printf("no");
+
+}
+
+return 0;
+
+}  
