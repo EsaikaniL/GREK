@@ -3,9 +3,11 @@
 
 int main(void) 
 {
-int x,y,remainder,gcd;
+int x,y,remainder,lcm,gcd,a,b;
 scanf("%d",&x);
 scanf("%d",&y);
+a=x;
+b=y;
 do
 {
 remainder=x%y;
@@ -13,9 +15,9 @@ if(remainder==0)
 break;
 x=y;
 y=remainder;
-}
-while(remainder!=0);
+}while(remainder!=0);
 gcd=y;
-printf("%d",gcd);
+lcm=(a*b)/gcd;
+printf("\n the lcm of the given number is: %d",lcm);
 return 0;
 }
