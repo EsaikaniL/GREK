@@ -1,19 +1,16 @@
-s=raw_input()
-f=k=a=d=e=0
-for i in range(len(s)):
-    if(s[i]=='@'):
-        a=a+1
-        j=i
-        if(j>2):
-            k=1
-    if(s[i]=='.'):
-        d=d+1
-        if(i-j>=5):
-            f=1
-    if(s[-3:]=='com'):
-        e=1
-if(a==1 and k==1 and d==1 and f==1 and e==1):
-    print('YES')
-else:
-    print('NO')
-        
+n=raw_input()
+if(n.count("@")==1 and n.count("&")<=1 and n.count(".")<=1 and 'com' in n):
+    x,c1,c2=0,0,0
+    while(n[x]!='@'):
+        c1=c1+1
+        x=x+1
+    x=x+1
+    if(c1>=4):
+        while(n[x]!="."):
+            c2=c2+1 
+            x=x+1 
+    if(c2==5):
+        print("YES")
+    else:
+        print("NO")
+else:print("NO")
