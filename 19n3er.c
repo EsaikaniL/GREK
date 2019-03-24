@@ -18,6 +18,6 @@ y=remainder;
 }while(remainder!=0);
 gcd=y;
 lcm=(a*b)/gcd;
-printf("\n the lcm of the given number is: %d",lcm);
+printf("%d",lcm);
 return 0;
 }
