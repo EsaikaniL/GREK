@@ -1,24 +1,28 @@
 //esai
 #include <stdio.h>
 #include<string.h>
-int main(void) 
-{
-	char str[50],temp[10];
-	int i,j,n,k;
-	scanf("%s",str);
-	n=strlen(str);
-	while(i<j)
+int main(void) {
+	char a[10];
+	scanf("%s",a);
+	int m,i,j,flag=0;
+	m=strlen(a);
+	for(i=0,j=m-1;i<=m/2;i++,j--)
 	{
-		for(i=0;i<n;i++)
+		
+		if(a[i]!=a[j])
 		{
-			for(j=n;j>=1;j--)
-			{
-				temp[k]=str[i];
-				str[i]=str[j];
-				str[j]=str[i];
-			}
+			printf("no");
+			flag=1;
+			break;
+			
 		}
 	}
-	printf("yes");
+	if(flag==0)
+	{
+		printf("yes");
+	}
+	
+	
+
 	return 0;
 }
