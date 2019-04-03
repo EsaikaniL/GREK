@@ -1,3 +1,4 @@
+//esai
 n=int(input())
 x=[int(i) for i in input().split()]
 m1=min(x)
